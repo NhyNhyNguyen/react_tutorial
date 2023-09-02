@@ -8,10 +8,17 @@ import Counter from './components/Counter';
 import FunctionClick from './components/FunctionClick';
 import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
-
+import NameList from './components/NameList';
+import StyleSheet from './components/StyleSheet';
+import Inline from './components/Inline';
+import './appStyles.css'
+import styles from './appStyles.module.css'
+import Form from './components/Form';
 function App() {
   return (
     <div className="App">
+      <h1 className='error'>Error</h1>
+      <h2 className={styles.success}>Success</h2>
       {/* <Greet></Greet>
       <Welcome></Welcome> */}
       {/* <Greet name = "nhi" heroName = "Super man">
@@ -25,7 +32,9 @@ function App() {
       {/* <Message></Message>
 
       // <Counter></Counter> */}
-     <ParentComponent></ParentComponent>
+      <StyleSheet primary={true}></StyleSheet>
+      <Inline></Inline>
+      <Form></Form>
     </div>
   );
 }

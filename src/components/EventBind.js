@@ -18,6 +18,7 @@ class EventBind extends Component {
     //     })
     // }
 
+    //bind by user arrow function
     clickHandler = () => {
         this.setState({
             message: "Good bye"
