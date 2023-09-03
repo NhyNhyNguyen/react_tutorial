@@ -36,6 +36,7 @@ class Form extends Component {
     }
 
     render() {
+        const {username, comment, topic} = th
         return (
             <div>
                 Form Component
@@ -43,16 +44,16 @@ class Form extends Component {
                     <label>Username</label>
                     <input
                         type='text'
-                        value={this.state.username}
+                        value={username}
                         onChange={this.handleUsernameChange} ></input>
                     <div>
                         <label>Comment</label>
-                        <textarea value={this.state.comments}
+                        <textarea value={comments}
                             onChange={this.handleCommentChange}></textarea>
                     </div>
                     <div>
                         <label>Topic</label>
-                        <select value={this.state.topic} onChange={this.handleTopicChange}>
+                        <select value={topic} onChange={this.handleTopicChange}>
                             <option value="React">React</option>
                             <option value="Angular">Angular</option>
                             <option value="Vue">Vue</option>

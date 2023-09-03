@@ -14,27 +14,17 @@ import Inline from './components/Inline';
 import './appStyles.css'
 import styles from './appStyles.module.css'
 import Form from './components/Form';
+import LifeCycleA from './components/LifeCycleA';
+import ClassClick from './components/ClassClick';
+import FragmentDemo from './components/FragmentDemo';
+import Table from './components/Table';
+import PureComp from './components/PureComp';
+import ParentComp from './components/ParentComp';
+import RefsDemo from './components/RefsDemo';
 function App() {
   return (
     <div className="App">
-      <h1 className='error'>Error</h1>
-      <h2 className={styles.success}>Success</h2>
-      {/* <Greet></Greet>
-      <Welcome></Welcome> */}
-      {/* <Greet name = "nhi" heroName = "Super man">
-        <>This is children props </>
-      </Greet>
-      <Greet name = "nhi 2" heroName = "Bat man"></Greet>
-      <Hello></Hello>
-      <Welcome  name = "nhi" heroName = "Super man"></Welcome>
-      <Welcome name = "nhi 2" heroName = "Bat man"></Welcome> */}
-
-      {/* <Message></Message>
-
-      // <Counter></Counter> */}
-      <StyleSheet primary={true}></StyleSheet>
-      <Inline></Inline>
-      <Form></Form>
+      <RefsDemo></RefsDemo>
     </div>
   );
 }
