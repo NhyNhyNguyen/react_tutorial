@@ -21,10 +21,13 @@ import Table from './components/Table';
 import PureComp from './components/PureComp';
 import ParentComp from './components/ParentComp';
 import RefsDemo from './components/RefsDemo';
+import ClickCount from './components/ClickCount';
+import HoverCounter from './components/HoverCounter';
 function App() {
   return (
     <div className="App">
-      <RefsDemo></RefsDemo>
+      <ClickCount></ClickCount>
+      <HoverCounter></HoverCounter>
     </div>
   );
 }

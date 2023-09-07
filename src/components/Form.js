@@ -36,7 +36,7 @@ class Form extends Component {
     }
 
     render() {
-        const {username, comment, topic} = th
+        const {username, comment, topic} = this.state
         return (
             <div>
                 Form Component
@@ -48,7 +48,7 @@ class Form extends Component {
                         onChange={this.handleUsernameChange} ></input>
                     <div>
                         <label>Comment</label>
-                        <textarea value={comments}
+                        <textarea value={comment}
                             onChange={this.handleCommentChange}></textarea>
                     </div>
                     <div>
