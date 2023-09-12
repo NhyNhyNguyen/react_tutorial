@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import {Greet} from './components/Greet'
+import { Greet } from './components/Greet'
 import Welcome from './components/Welcome';
 import Hello from './components/Hello';
 import Message from './components/Message';
@@ -23,11 +23,16 @@ import ParentComp from './components/ParentComp';
 import RefsDemo from './components/RefsDemo';
 import ClickCount from './components/ClickCount';
 import HoverCounter from './components/HoverCounter';
+import ClickCounterTwo from './components/ClickCounterTwo';
+import { HoverCounterTwo } from './components/HoverCounterTwo';
+import User from './components/User';
+import RenderCounter from './components/RenderCounter';
 function App() {
   return (
     <div className="App">
-      <ClickCount></ClickCount>
-      <HoverCounter></HoverCounter>
+      <RenderCounter render={(count, incrementCount) => <ClickCounterTwo count={count} incrementCount={incrementCount}></ClickCounterTwo>}></RenderCounter>
+      <RenderCounter render={(count, incrementCount) => <HoverCounterTwo count={count} incrementCount={incrementCount}></HoverCounterTwo>}></RenderCounter>
+
     </div>
   );
 }
