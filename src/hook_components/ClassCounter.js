@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 
-class RenderCounter extends Component {
-
+export class ClassCounter extends Component {
     constructor(props) {
         super(props)
 
@@ -17,13 +16,14 @@ class RenderCounter extends Component {
             }
         })
     }
+
     render() {
         return (
             <div>
-                {this.props.children(this.state.count, this.incrementCount)}
+                <button onClick={this.incrementCount}>count {this.state.count}</button>
             </div>
         )
     }
 }
 
-export default RenderCounter
+export default ClassCounter
