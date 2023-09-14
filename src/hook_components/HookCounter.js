@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 
-
-
 function HookCounter() {
     //array destructuring es 6 -> ????
     const [count, setCount] =  useState(0)
