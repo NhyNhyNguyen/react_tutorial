@@ -1,14 +1,18 @@
 import './App.css';
-import ComponentA from './components/ComponentA';
-import PostList from './components/PostList';
-import { UserProvider } from './components/UserContext';
-import HookCounterFour from './hook_components/HookCounterFour';
-import HookCounterOne from './hook_components/HookCounterOne';
-import HookMouse from './hook_components/HookMouse';
+import React from 'react';
+import ComponentC from './hook_components/ComponentC';
+
+export const UserContext = React.createContext();
+export const ChannelContext = React.createContext();
+
 function App() {
   return (
-    <div className="App">  
-      <PostList/>
+    <div className="App">
+      <UserContext.Provider value='vishwas'>
+        <ChannelContext.Provider value='code volutuion'>
+          <ComponentC></ComponentC>
+        </ChannelContext.Provider>
+      </UserContext.Provider>
     </div>
   );
 }
