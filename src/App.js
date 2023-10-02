@@ -7,14 +7,14 @@ import DocTitleOne from './hook_components/custom_hook/DocTitleOne';
 import DocTitleTwo from './hook_components/custom_hook/DocTitleOne';
 import CounterOne from './hook_components/custom_hook/CounterOne';
 import CounterTwo from './hook_components/custom_hook/CounterTwo';
+import UserForm from './hook_components/custom_hook/UserForm';
 
 
 function App() {
   
   return (
     <div className="App">
-      <CounterOne></CounterOne>
-      <CounterTwo/>
+      <UserForm></UserForm>
     </div>
   );
 }
